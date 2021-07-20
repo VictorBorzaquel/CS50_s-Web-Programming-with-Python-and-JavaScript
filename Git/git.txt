@@ -1,2 +1,3 @@
-git clone "html" = clone repository GitHub
-git add
+git clone <html> = clone repository GitHub
+git add <filename> = changes to be committed modified file
+git commit -m "message" = commit modified files and add message

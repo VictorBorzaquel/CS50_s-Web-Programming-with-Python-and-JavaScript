@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Specificity</title>
+    <style>
+        * {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        table {
+            border: 1px solid white;
+            border-collapse: collapse;
+            color: white;
+        }
+
+        th {
+            background-color: blue;
+            border: 1px solid white;
+            padding: 10px;
+            width: 200px;
+        }
+
+        .description {
+            background-color: black;
+        }
+
+        li {
+            height: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Specificity</h1>
+        <ol>
+            <li>inline</li>
+            <li>id</li>
+            <li>class</li>
+            <li>type</li>
+        </ol>
+    </div>
+    <div>
+        <h1>CSS Selectors</h1>
+        <table>
+            <tr>
+                <th>a, b</th>
+                <th class="description">Multiple Element Selector</th>
+            </tr>
+            <tr>
+                <th>a b</th>
+                <th class="description">Descendant Selector</th>
+            </tr>
+            <tr>
+                <th>a > b</th>
+                <th class="description">Child Selector</th>
+            </tr>
+            <tr>
+                <th>a + b</th>
+                <th class="description">Adjacent Sibling Selector</th>
+            </tr>
+            <tr>
+                <th>[a=b]</th>
+                <th class="description">Attribute Selector</th>
+            </tr>
+            <tr>
+                <th>a:b</th>
+                <th class="description">Pseudoclass Selector</th>
+            </tr>
+            <tr>
+                <th>a::b</th>
+                <th class="description">Pseudoelement Selector</th>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h1>Responsive Designn</h1>
+        <ul>
+            <li>Viewport</li>
+            <ul><li><xmp><meta name="viewport" content="width=device-width, initial-scale=1.0"></xmp></li>
+            </ul>
+            <li>Media Queries</li>
+            <ul>
+                <li>Media Types: print, screen, ...</li>
+                <li>Media Features: height, width, orientation, ...</li>
+            </ul>
+            <li>Flexbox</li>
+            <li>Grids</li>
+        </ul>
+    </div>
+    <div>
+        <h1>SCSS</h1>
+        <h2>Compile SCSS:</h2>
+        <p>sass variables.scss:variables.css</p>
+        <h2>Auto Compile SCSS</h2>
+        <p>sass --watch variables.scss:variables.css</p>
+    </div>
+
+</body>
+
+</html>
