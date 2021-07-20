@@ -1,3 +1,16 @@
 git clone <html> = clone repository GitHub
 git add <filename> = changes to be committed modified file
-git commit -m "message" = commit modified files and add message
+git add --all = add all files
+git commit -m "message" = commit modified files and add message in local
+git commit -am "message" = add and commit all files
+git status = view status git
+git push = publish your local commits
+git checkout -- <file> = to discard changes in working directory
+git pull = download git in the directory
+git log = history of git commit
+git reset --hard <commit> = reset commit previous version
+git reset --hard origin/master =  reset branch previous version
+git branch = view branching
+git checkout -b <name> = crate a new branch
+git checkout <name> = switch to branchings
+git merge <name> = merge branch in master branch
