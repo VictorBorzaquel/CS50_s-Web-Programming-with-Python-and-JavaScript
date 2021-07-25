@@ -1,6 +1,0 @@
-python3 -m venv venv = create virtual ambient
-. venv/bin/activate = activate virtual ambient
-deactivate = deactivate virtual ambient
-
-
-click extension and select python virtual ambient
